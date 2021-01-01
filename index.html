@@ -1,0 +1,37 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">CRUD APPLICATION</h1>
+        <h1>Add User</h1>
+        <form action="/user" method="post">
+            USER ID <input type="text" id="userid" name="userid" size="20"><br>
+            NAME <input type="text" id="name" name="name" size="20"><br>
+            DOB <input type="text" id="dob" name="dob" size="20"><br>
+            PROFESSION <input type="text" id="profession" name="profession" size="20"><br>
+            <button type="submit" name="submit">
+                Add User
+            </button>
+        </form>
+        <h1>Get Specific User Details</h1>
+        <form action="/paticularUser" method="post">
+            USER ID <input type="text" id="urid" name="urid" size="20"><br>
+            <button type="submit" name="submit">
+                Get User Info
+            </button>
+        </form>
+
+        <h1>Delete User Details</h1>
+        <form action="/deleteUser" method="post">
+            USER ID <input type="text" id="uid" name="uid" size="20"><br>
+            <button type="submit" name="submit">
+                Delete User Info
+            </button>
+        </form>
+
+        <h1>All User Details</h1>
+        <form action="/showall" method="get">
+            <button type="submit" name="submit">
+                All User Info
+            </button>
+        </form>
+    </body>
+</html>
